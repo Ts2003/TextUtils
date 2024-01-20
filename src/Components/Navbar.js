@@ -1,12 +1,8 @@
-import { useState } from 'react'
 
 export default function Navbar({name = "Tanishq"}) {
-    const [myStyle , setMyStyle] = useState({
-        backgroundColor: "black",
-    });
     return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" style = {myStyle}>
+      <nav className="navbar navbar-expand bg-body-darl">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">{name}</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

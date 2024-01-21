@@ -1,7 +1,6 @@
 
 import { useState } from 'react'
 
-
 export default function TextForm( {showAlert} ) {
     const [text , setText] = useState("Enter Your Text Here");
     const [buttonText , setButtonText] = useState("Dark Theme");
@@ -12,7 +11,7 @@ export default function TextForm( {showAlert} ) {
     function handleUpperCase(){
     let newText = text.toUpperCase();
       setText(newText);
-      showAlert("Uppercase function has been performed" , "success")
+      showAlert("Uppercase function has been performed" , "Success")
     }
     function handleClear(){
       let newText = "";
@@ -39,9 +38,7 @@ export default function TextForm( {showAlert} ) {
         }
         setMyStyle(newStyle);
     }
-    // if(text.split(" ").length === 10){
-    //     showAlert("You have completed 10 words" , "Success")
-    // }
+   
     return (
       <div>
           <div className="container">
